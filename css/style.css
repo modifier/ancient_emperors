@@ -1,0 +1,55 @@
+body {
+	margin: 20px;
+}
+
+body.main #museum_table {
+	display: none;
+}
+
+#main_table .image {
+	width: 15%;
+}
+
+#main_table .name {
+	width: 20%;
+}
+
+#main_table .position {
+	width: 15%;
+}
+
+#main_table .country {
+	width: 15%;
+}
+
+#main_table .birth {
+	width: 15%;
+}
+
+#main_table .death {
+	width: 15%;
+}
+
+#main_table .details {
+	width: 5%;
+}
+
+body.museum #main_table {
+	display: none;
+}
+
+#museum_table .image {
+	width: 20%;
+}
+
+#museum_table .item-name {
+	width: 20%;
+}
+
+#museum_table .comment {
+	width: 30%;
+}
+
+#museum_table .description {
+	width: 30%;
+}
