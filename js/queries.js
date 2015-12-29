@@ -98,7 +98,7 @@ var Queries = (function () {
 	};
 
 	var getEmperorItems = function (emperorName) {
-		var query = ["SELECT ?itemLabel (Sample(?description) as ?description) (Sample(?comment) as ?comment) (Sample(?image) as ?image) WHERE {",
+		var query = ["SELECT * WHERE {",
 		"  ?emperor rdfs:label \"" + emperorName + "\" .",
 		"  ?emperor rdf:type ecrm:E21_Person .",
 		"  ?item ecrm:P62_depicts ?emperor .",
@@ -107,7 +107,6 @@ var Queries = (function () {
 		"  OPTIONAL { ?item bmo:PX_curatorial_comment ?comment } .",
 		"  OPTIONAL { ?item bmo:PX_has_main_representation ?image }",
 		"}",
-		"GROUP BY ?itemLabel",
 		" LIMIT 50"];
 
 		return getXhr({
