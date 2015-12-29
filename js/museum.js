@@ -10,7 +10,7 @@ var renderMuseumRow = function (item) {
 	var row = document.createElement('tr');
 
 	row.appendChild(getTd(getUrl('<img src="' + getValue(item, 'image') + '" height="200"/>', getValue(item, 'image'), true)));
-	row.appendChild(getTd(getValue(item, 'itemLabel')));
+	row.appendChild(getTd(getUrl(getValue(item, 'itemLabel'), getValue(item, 'item'))));
 	row.appendChild(getTd(getValue(item, 'comment')));
 	row.appendChild(getTd(getValue(item, 'description')));
 
